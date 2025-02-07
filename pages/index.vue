@@ -50,17 +50,18 @@
         class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
       >
         <!-- Category 1 -->
-        <div
-          class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300"
-        >
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Category 1"
-            class="w-32 h-32 mx-auto mb-4"
-          />
-          <h3 class="text-2xl font-semibold">Cars</h3>
-        </div>
-
+        <nuxt-link to="/cars">
+          <div
+            class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300"
+          >
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Category 1"
+              class="w-32 h-32 mx-auto mb-4"
+            />
+            <h3 class="text-2xl font-semibold">Cars</h3>
+          </div>
+        </nuxt-link>
         <!-- Category 2 -->
         <div
           class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300"
