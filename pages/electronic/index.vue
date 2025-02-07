@@ -1,6 +1,6 @@
 <template>
   <div>
-    <products-list title="Collection of new cars" category="CARS" />
+    <products-list title="Collection of new electronic" category="ELECTRONIC" />
   </div>
 </template>
 

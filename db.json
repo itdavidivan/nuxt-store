@@ -26,6 +26,15 @@
       "price": 1.5,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4I0lAKalx2Je4lRF5E_rSJZAtPrpKAHA8vg&s",
       "category": "FOOD"
+    },
+    {
+      "id": "4",
+      "name": "Nike Air Max 97",
+      "description": "Stylish and comfortable running shoes from Nike.",
+      "stock": 30,
+      "price": 120,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYfBMPU6qjk3LtMgvh4qRgfSccdbl439rJkA&s",
+      "category": "CLOTHING"
     }
   ]
 }

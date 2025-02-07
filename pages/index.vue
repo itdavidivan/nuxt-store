@@ -63,40 +63,46 @@
           </div>
         </nuxt-link>
         <!-- Category 2 -->
-        <div
-          class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300"
+        <nuxt-link to="/electronic"
+          ><div
+            class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300"
+          >
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Category 2"
+              class="w-32 h-32 mx-auto mb-4"
+            />
+            <h3 class="text-2xl font-semibold">Electronics</h3>
+          </div></nuxt-link
         >
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Category 2"
-            class="w-32 h-32 mx-auto mb-4"
-          />
-          <h3 class="text-2xl font-semibold">Electronics</h3>
-        </div>
 
         <!-- Category 3 -->
-        <div
-          class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300"
-        >
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Category 3"
-            class="w-32 h-32 mx-auto mb-4"
-          />
-          <h3 class="text-2xl font-semibold">Food</h3>
-        </div>
+        <nuxt-link to="/food">
+          <div
+            class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300"
+          >
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Category 3"
+              class="w-32 h-32 mx-auto mb-4"
+            />
+            <h3 class="text-2xl font-semibold">Food</h3>
+          </div>
+        </nuxt-link>
 
         <!-- Category 4 -->
-        <div
-          class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300"
-        >
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Category 4"
-            class="w-32 h-32 mx-auto mb-4"
-          />
-          <h3 class="text-2xl font-semibold">Clothing</h3>
-        </div>
+        <nuxt-link to="/clothing">
+          <div
+            class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300"
+          >
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Category 4"
+              class="w-32 h-32 mx-auto mb-4"
+            />
+            <h3 class="text-2xl font-semibold">Clothing</h3>
+          </div>
+        </nuxt-link>
       </div>
     </section>
 
