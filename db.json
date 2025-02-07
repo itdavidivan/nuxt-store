@@ -1,7 +1,7 @@
 {
   "Products": [
     {
-      "id": "1",
+      "id": "0ae7a6da-c14a-4be2-b8e1-9afa68dfb93f",
       "name": "Tesla Model S",
       "description": "A fully electric sedan with advanced autopilot features.",
       "stock": 5,
@@ -10,7 +10,7 @@
       "category": "CARS"
     },
     {
-      "id": "2",
+      "id": "e1454887-b6c0-4e76-b642-88d3a5330208",
       "name": "Apple iPhone 15",
       "description": "Latest iPhone with A17 chip and improved camera system.",
       "stock": 20,
@@ -19,7 +19,7 @@
       "category": "ELECTRONIC"
     },
     {
-      "id": "3",
+      "id": "67ed5754-1391-40df-8583-b7ded55bbf22",
       "name": "Organic Bananas",
       "description": "Fresh, organic bananas from local farms.",
       "stock": 50,
@@ -28,7 +28,7 @@
       "category": "FOOD"
     },
     {
-      "id": "4",
+      "id": "5bf6d270-468b-4d94-be91-5bfe60042717",
       "name": "Nike Air Max 97",
       "description": "Stylish and comfortable running shoes from Nike.",
       "stock": 30,
