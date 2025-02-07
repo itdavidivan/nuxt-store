@@ -8,7 +8,8 @@
       class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
     >
       <!-- Loop through each car in carsProducts -->
-      <div
+      <nuxt-link
+        :to="`/${category.toLocaleLowerCase()}/${product.id}`"
         v-for="product in allProducts"
         :key="product.id"
         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl"
@@ -38,7 +39,7 @@
             Add to Cart
           </button>
         </div>
-      </div>
+      </nuxt-link>
     </div>
   </div>
 </template>
