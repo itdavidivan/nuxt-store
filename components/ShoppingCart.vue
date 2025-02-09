@@ -80,6 +80,9 @@ export default {
       return useCounterStore();
     },
   },
+  mounted() {
+    this.store.loadLocalStorage();
+  },
 };
 </script>
 <style scoped>

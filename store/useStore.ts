@@ -13,6 +13,7 @@ const useCounterStore = defineStore("counter", {
       });
       if (item === undefined) {
         this.products = [...this.products, product];
+        this.saveToLocalStorage();
       }
     },
     removeItem(product: Product) {
@@ -20,12 +21,23 @@ const useCounterStore = defineStore("counter", {
         return currentProduct.id !== product.id;
       });
       this.products = items;
+      this.saveToLocalStorage();
     },
     clearCart() {
       this.products = [];
+      this.saveToLocalStorage();
     },
     toggleCart() {
       this.isCartDisplayed = !this.isCartDisplayed;
+    },
+    saveToLocalStorage() {
+      localStorage.setItem("cart", JSON.stringify(this.products));
+    },
+    loadLocalStorage() {
+      const storedProducts = localStorage.getItem("cart");
+      if (storedProducts) {
+        this.products = JSON.parse(storedProducts);
+      }
     },
   },
 });
