@@ -15,7 +15,12 @@ const useCounterStore = defineStore("counter", {
         this.products = [...this.products, product];
       }
     },
-    removeItem() {},
+    removeItem(product: Product) {
+      const items = this.products.filter((currentProduct) => {
+        return currentProduct.id !== product.id;
+      });
+      this.products = items;
+    },
     clearCart() {
       this.products = [];
     },

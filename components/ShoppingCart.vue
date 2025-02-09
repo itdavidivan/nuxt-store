@@ -50,7 +50,7 @@
           </div>
         </div>
         <button
-          @click="() => {}"
+          @click="store.removeItem(item)"
           class="text-red-500 hover:text-red-400 transition duration-300"
         >
           Remove
