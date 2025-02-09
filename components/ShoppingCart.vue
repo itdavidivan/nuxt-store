@@ -88,6 +88,6 @@ export default {
 <style scoped>
 .container {
   background-color: rgba(128, 128, 128, 0.699);
-  margin-top: 45px;
+  margin-top: 55px;
 }
 </style>
