@@ -56,18 +56,20 @@
           Remove
         </button>
       </div>
-
-      <div class="flex justify-between items-center border-t-2 pt-6 mt-6">
-        <div class="text-xl font-semibold text-gray-800">
-          Total:
-          <!-- <span class="text-orange-500">{{ totalAmount | currency }}</span> -->
-        </div>
-        <button
-          class="bg-orange-500 text-white py-2 px-6 rounded-lg hover:bg-orange-400 transition duration-300"
-        >
-          Proceed to Checkout
-        </button>
+    </div>
+    <div
+      v-if="totalPrice > 0"
+      class="flex justify-between items-center border-t-2 pt-6 mt-6"
+    >
+      <div class="text-xl font-semibold text-gray-800">
+        Total:
+        <span class="text-orange-500">{{ totalPrice }}$</span>
       </div>
+      <button
+        class="bg-orange-500 text-white py-2 px-6 rounded-lg hover:bg-orange-400 transition duration-300"
+      >
+        Proceed to Checkout
+      </button>
     </div>
   </div>
 </template>
@@ -78,6 +80,9 @@ export default {
   computed: {
     store() {
       return useCounterStore();
+    },
+    totalPrice() {
+      return this.store.products.reduce((total, item) => total + item.price, 0);
     },
   },
   mounted() {
