@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container mx-auto p-6 absolute w-[600px] h-[800px] right-[100px] z-[100] overflow-auto"
+    class="container mx-auto p-6 absolute w-[600px] h-[800px] right-[10px] z-[100] overflow-auto"
   >
     <div class="flex justify-between items-center border-b-2 pb-4 mb-6">
       <h2 class="text-2xl font-semibold text-gray-800">Your Shopping Cart</h2>
@@ -88,5 +88,6 @@ export default {
 <style scoped>
 .container {
   background-color: rgba(128, 128, 128, 0.699);
+  margin-top: 45px;
 }
 </style>

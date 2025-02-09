@@ -13,7 +13,7 @@
         :key="product.id"
         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl"
       >
-        ><nuxt-link :to="`/${category.toLocaleLowerCase()}/${product.id}`">
+        <nuxt-link :to="`/${category.toLocaleLowerCase()}/${product.id}`">
           <img
             :src="product.picture"
             alt="Product Image"

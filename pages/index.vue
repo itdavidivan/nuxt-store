@@ -18,11 +18,6 @@
             >Contact</a
           >
         </nav>
-        <button
-          class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition-all duration-300"
-        >
-          Cart
-        </button>
       </div>
     </header>
 
@@ -106,7 +101,6 @@
       </div>
     </section>
 
-    <!-- Featured Products Section -->
     <section id="products" class="py-16 px-4 bg-gray-100">
       <h2 class="text-4xl font-semibold text-center text-gray-800 mb-12">
         Featured Products
@@ -117,7 +111,7 @@
         <!-- Product 1 -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
           <img
-            src="https://via.placeholder.com/300"
+            src="https://www.techbyte.sk/wp-content/uploads/2021/01/tesla-model-S-2021.jpg"
             alt="Product 1"
             class="w-full h-64 object-cover mb-4"
           />
@@ -140,7 +134,7 @@
         <!-- Product 2 -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
           <img
-            src="https://via.placeholder.com/300"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1AN7XPOm8pxX-OXSHI0rZ1npCiqsD7yaVyA&s"
             alt="Product 2"
             class="w-full h-64 object-cover mb-4"
           />
@@ -163,7 +157,7 @@
         <!-- Product 3 -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
           <img
-            src="https://via.placeholder.com/300"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYfBMPU6qjk3LtMgvh4qRgfSccdbl439rJkA&s"
             alt="Product 3"
             class="w-full h-64 object-cover mb-4"
           />
