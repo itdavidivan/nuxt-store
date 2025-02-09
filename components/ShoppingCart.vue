@@ -1,10 +1,11 @@
 <template>
   <div
-    class="container mx-auto p-6 absolute w-[600px] h-[600px] right-[100px] z-[100]"
+    class="container mx-auto p-6 absolute w-[600px] h-[800px] right-[100px] z-[100] overflow-auto"
   >
     <div class="flex justify-between items-center border-b-2 pb-4 mb-6">
       <h2 class="text-2xl font-semibold text-gray-800">Your Shopping Cart</h2>
       <button
+        @click="store.clearCart()"
         class="bg-orange-500 text-white py-2 px-6 rounded-lg hover:bg-orange-400 transition duration-300"
       >
         Clear Cart

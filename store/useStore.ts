@@ -8,9 +8,17 @@ const useCounterStore = defineStore("counter", {
   }),
   actions: {
     addItem(product: Product) {
-      this.products = [...this.products, product];
+      const item = this.products.find((currentProduct) => {
+        return currentProduct.id === product.id;
+      });
+      if (item === undefined) {
+        this.products = [...this.products, product];
+      }
     },
     removeItem() {},
+    clearCart() {
+      this.products = [];
+    },
     toggleCart() {
       this.isCartDisplayed = !this.isCartDisplayed;
     },
