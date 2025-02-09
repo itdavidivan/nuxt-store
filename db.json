@@ -35,6 +35,69 @@
       "price": 120,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYfBMPU6qjk3LtMgvh4qRgfSccdbl439rJkA&s",
       "category": "CLOTHING"
+    },
+    {
+      "id": "a1b8d5f2-b7f9-4b84-8a71-b7d4fc3ac33d",
+      "name": "Ford Mustang",
+      "description": "Classic American muscle car with a powerful V8 engine.",
+      "stock": 8,
+      "price": 55999,
+      "picture": "https://www.ford.com/cmslibs/content/dam/brand_ford/en_us/brand/resources/general/images/mustang/2020/fordsportscar-mustang-v2.jpg",
+      "category": "CARS"
+    },
+    {
+      "id": "d5b88260-9c3f-4c35-9b8a-0b8b6d35d0e1",
+      "name": "Samsung Galaxy S24",
+      "description": "Latest Samsung phone with a powerful camera and display.",
+      "stock": 15,
+      "price": 899,
+      "picture": "https://www.samsung.com/global/galaxy/galaxy-s24/images/overview/galaxy-s24-hero1.jpg",
+      "category": "ELECTRONIC"
+    },
+    {
+      "id": "2345cda2-dba1-4704-bd72-c1a5d97835ac",
+      "name": "Mangoes",
+      "description": "Juicy and ripe mangoes from tropical farms.",
+      "stock": 70,
+      "price": 2,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqZpOS7B9jr5rgw77mNGZYUSd87Wq5tytfMkU&s",
+      "category": "FOOD"
+    },
+    {
+      "id": "f875c1a0-c97b-4091-8b07-717ae541df02",
+      "name": "Adidas Ultraboost 22",
+      "description": "High-performance running shoes from Adidas with great cushioning.",
+      "stock": 25,
+      "price": 180,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZzqfWkNN51zJhFNjZs2w4J2BddrjroZs3a_E&s",
+      "category": "CLOTHING"
+    },
+    {
+      "id": "77d85c98-b1b0-4099-b9fe-6c5ae653aebd",
+      "name": "Chevrolet Camaro",
+      "description": "Iconic American sports car with a sleek design and powerful performance.",
+      "stock": 10,
+      "price": 49999,
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/a/a2/2021_Chevrolet_Camaro_SS_6.2_Front.jpg",
+      "category": "CARS"
+    },
+    {
+      "id": "f50a7c24-4b7b-4712-8131-98a88f4c6316",
+      "name": "Sony PlayStation 5",
+      "description": "Next-gen gaming console with ultra-fast SSD and amazing graphics.",
+      "stock": 30,
+      "price": 499,
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/c/c9/PlayStation_5_Console.jpg",
+      "category": "ELECTRONIC"
+    },
+    {
+      "id": "ad56fe83-4369-4f3f-824b-5d44f0d94658",
+      "name": "Pineapple",
+      "description": "Fresh and sweet pineapples from tropical regions.",
+      "stock": 60,
+      "price": 3,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk39z0t-jB8xUKJixOwA9VZOTGgceYtDFtv4o&s",
+      "category": "FOOD"
     }
   ]
 }

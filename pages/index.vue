@@ -55,7 +55,7 @@
             class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300"
           >
             <img
-              src="https://via.placeholder.com/150"
+              src="https://www.techbyte.sk/wp-content/uploads/2021/01/tesla-model-S-2021.jpg"
               alt="Category 1"
               class="w-32 h-32 mx-auto mb-4"
             />
@@ -68,7 +68,7 @@
             class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300"
           >
             <img
-              src="https://via.placeholder.com/150"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1AN7XPOm8pxX-OXSHI0rZ1npCiqsD7yaVyA&s"
               alt="Category 2"
               class="w-32 h-32 mx-auto mb-4"
             />
@@ -82,7 +82,7 @@
             class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300"
           >
             <img
-              src="https://via.placeholder.com/150"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4I0lAKalx2Je4lRF5E_rSJZAtPrpKAHA8vg&s"
               alt="Category 3"
               class="w-32 h-32 mx-auto mb-4"
             />
@@ -96,7 +96,7 @@
             class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300"
           >
             <img
-              src="https://via.placeholder.com/150"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYfBMPU6qjk3LtMgvh4qRgfSccdbl439rJkA&s"
               alt="Category 4"
               class="w-32 h-32 mx-auto mb-4"
             />

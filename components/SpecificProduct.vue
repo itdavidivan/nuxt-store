@@ -25,7 +25,7 @@
 
         <!-- Add to Cart button -->
         <button
-          @click="addToCart(product)"
+          @click="store.addItem(product)"
           class="w-full py-3 text-lg font-semibold text-white rounded-full bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-500 transition-all duration-300 transform hover:scale-105"
         >
           Add to Cart
@@ -38,6 +38,7 @@
 <script lang="ts">
 import axios from "axios";
 import type { Product } from "~/assets/types";
+import useCounterStore from "~/store/useStore";
 
 export default {
   data() {
@@ -45,6 +46,11 @@ export default {
       idProduct: this.$route.params.id,
       product: {} as Product,
     };
+  },
+  computed: {
+    store() {
+      return useCounterStore();
+    },
   },
   methods: {
     async fetchingProduct() {
