@@ -37,6 +37,7 @@ export default {
   z-index: 100;
   position: absolute;
   right: 10px;
+  top: 10px;
 }
 
 .toggleCart:hover {
