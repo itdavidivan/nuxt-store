@@ -4,7 +4,7 @@ import type { Product } from "~/assets/types";
 const useCounterStore = defineStore("counter", {
   state: () => ({
     products: [] as Product[],
-    isCartDisplayed: true,
+    isCartDisplayed: false,
   }),
   actions: {
     addItem(product: Product) {
@@ -14,6 +14,7 @@ const useCounterStore = defineStore("counter", {
       if (item === undefined) {
         this.products = [...this.products, product];
         this.saveToLocalStorage();
+        this.isCartDisplayed = true;
       }
     },
     removeItem(product: Product) {
