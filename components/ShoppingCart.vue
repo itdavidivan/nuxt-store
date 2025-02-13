@@ -71,7 +71,7 @@
     >
       <div class="text-xl font-semibold text-gray-800">
         Total:
-        <span class="text-orange-500">{{ totalPrice }}$</span>
+        <span class="text-500">{{ totalPrice }}$</span>
       </div>
       <button
         class="bg-orange-500 text-white py-2 px-6 rounded-lg hover:bg-orange-400 transition duration-300"
@@ -90,7 +90,10 @@ export default {
       return useCounterStore();
     },
     totalPrice() {
-      return this.store.products.reduce((total, item) => total + item.price, 0);
+      return this.store.products.reduce(
+        (total, item) => total + item.price * item.count,
+        0
+      );
     },
   },
   mounted() {
