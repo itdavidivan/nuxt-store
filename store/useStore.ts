@@ -3,7 +3,7 @@ import type { Product } from "~/assets/types";
 
 const useCounterStore = defineStore("counter", {
   state: () => ({
-    products: [] as Product[],
+    products: [] as (Product & { count: number })[],
     isCartDisplayed: false,
   }),
   actions: {
@@ -12,9 +12,16 @@ const useCounterStore = defineStore("counter", {
         return currentProduct.id === product.id;
       });
       if (item === undefined) {
-        this.products = [...this.products, product];
+        this.products = [...this.products, { ...product, count: 1 }];
         this.saveToLocalStorage();
         this.isCartDisplayed = true;
+      } else if (item) {
+        this.products = this.products.map((currentProduct) => {
+          if (currentProduct.id === product.id) {
+            return { ...currentProduct, count: currentProduct.count + 1 };
+          }
+          return currentProduct;
+        });
       }
     },
     removeItem(product: Product) {
