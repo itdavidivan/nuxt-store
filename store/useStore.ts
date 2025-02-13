@@ -18,7 +18,12 @@ const useCounterStore = defineStore("counter", {
       } else if (item) {
         this.products = this.products.map((currentProduct) => {
           if (currentProduct.id === product.id) {
-            return { ...currentProduct, count: currentProduct.count + 1 };
+            const newCount =
+              currentProduct.count + 1 > currentProduct.stock
+                ? currentProduct.stock
+                : currentProduct.count + 1;
+
+            return { ...currentProduct, count: newCount };
           }
           return currentProduct;
         });

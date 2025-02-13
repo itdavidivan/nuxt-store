@@ -54,6 +54,7 @@
               +
             </button>
             <div>{{ item.count }}</div>
+            <span v-if="item.stock == item.count">LIMIT REACHED</span>
           </div>
         </div>
         <button
