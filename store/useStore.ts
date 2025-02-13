@@ -30,10 +30,18 @@ const useCounterStore = defineStore("counter", {
       }
     },
     removeItem(product: Product) {
-      const items = this.products.filter((currentProduct) => {
-        return currentProduct.id !== product.id;
+      const mapedProducts = this.products.map((currentProduct) => {
+        if (currentProduct.id === product.id) {
+          const newCount = currentProduct.count - 1;
+
+          return { ...currentProduct, count: newCount };
+        }
+        return currentProduct;
       });
-      this.products = items;
+      this.products = mapedProducts.filter((item) => {
+        return item.count !== 0;
+      });
+
       this.saveToLocalStorage();
     },
     clearCart() {

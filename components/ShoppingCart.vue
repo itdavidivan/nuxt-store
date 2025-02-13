@@ -41,15 +41,16 @@
           <!-- <p class="text-lg text-orange-500">{{ item.price | currency }}</p> -->
           <div class="flex items-center space-x-4 mt-4">
             <button
-              @click="() => {}"
+              @click="store.removeItem(item)"
               class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-400 transition duration-300"
             >
               -
             </button>
-            <span class="text-lg font-medium">{{ item.description }}</span>
+            <!-- <span class="text-lg font-medium">{{ item.description }}</span> -->
             <button
               @click="store.addItem(item)"
-              class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-400 transition duration-300"
+              class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-400 transition duration-300 disabled:bg-orange-200"
+              :disabled="item.count >= item.stock"
             >
               +
             </button>
@@ -57,12 +58,6 @@
             <span v-if="item.stock == item.count">LIMIT REACHED</span>
           </div>
         </div>
-        <button
-          @click="store.removeItem(item)"
-          class="text-red-500 hover:text-red-400 transition duration-300"
-        >
-          Remove
-        </button>
       </div>
     </div>
     <div
