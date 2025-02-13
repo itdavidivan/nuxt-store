@@ -6,7 +6,12 @@
     <shopping-cart v-if="store.isCartDisplayed"></shopping-cart>
   </header>
   <nuxt-page></nuxt-page>
-  <footer><h2>footer</h2></footer>
+  <footer id="contact" class="bg-blue-600 text-white py-6 px-4">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-lg">ShopMaster &copy; 2025 | All Rights Reserved</p>
+      <p class="text-sm mt-2">Contact us: support@shopmaster.com</p>
+    </div>
+  </footer>
 </template>
 
 <script lang="ts">

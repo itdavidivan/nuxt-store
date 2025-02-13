@@ -109,98 +109,73 @@
         class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
       >
         <!-- Product 1 -->
-        <nuxt-link to="/cars/0ae7a6da-c14a-4be2-b8e1-9afa68dfb93f">
-          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              src="https://www.techbyte.sk/wp-content/uploads/2021/01/tesla-model-S-2021.jpg"
-              alt="Product 1"
-              class="w-full h-64 object-cover mb-4"
-            />
-            <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-800">Tesla Model S</h3>
-              <p class="text-gray-600 mb-4">
-                A fully electric sedan with advanced autopilot features.
-              </p>
-              <div class="flex justify-between items-center">
-                <span class="text-lg font-semibold text-blue-600">$79 999</span>
-                <button
-                  class="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition-all duration-300"
-                >
-                  OPEN PRODUCT
-                </button>
-              </div>
-            </div>
-          </div></nuxt-link
+        <div
+          class="bg-white shadow-lg rounded-lg overflow-hidden"
+          v-for="product in featuredProducts"
+          :key="product.id"
         >
-
-        <!-- Product 2 -->
-        <nuxt-link to="/electronic/e1454887-b6c0-4e76-b642-88d3a5330208"
-          ><div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              src="https://th.bing.com/th/id/OIP.cRSpT192Z3KxFhf0i1KoOQHaEx?w=247&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
-              alt="Product 2"
-              class="w-full h-64 object-cover mb-4"
-            />
-            <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-800">
-                Apple iPhone 15
-              </h3>
-              <p class="text-gray-600 mb-4">
-                Latest iPhone with A17 chip and improved camera system.
-              </p>
-              <div class="flex justify-between items-center">
-                <span class="text-lg font-semibold text-blue-600">$999</span>
-                <button
-                  class="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition-all duration-300"
-                >
-                  OPEN PRODUCT
-                </button>
+          <nuxt-link :to="`/${product.category.toLowerCase()}/${product.id}`">
+            <div>
+              <img
+                :src="product.picture"
+                alt="Product 1"
+                class="w-full h-64 object-cover mb-4"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold text-gray-800">
+                  {{ product.name }}
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  {{ product.description }}
+                </p>
+                <div class="flex justify-between items-center">
+                  <span class="text-lg font-semibold text-blue-600"
+                    >${{ product.price }}</span
+                  >
+                </div>
               </div>
-            </div>
-          </div></nuxt-link
-        >
-
-        <!-- Product 3 -->
-        <nuxt-link to="/clothing/5bf6d270-468b-4d94-be91-5bfe60042717">
-          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjvBCBan3wB2M3K0Ha3rzEx1v4yBa5veipmA&s"
-              alt="Product 3"
-              class="w-full h-64 object-cover mb-4"
-            />
-            <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-800">
-                Nike Air Max 97
-              </h3>
-              <p class="text-gray-600 mb-4">
-                Stylish and comfortable running shoes from Nike collection.
-              </p>
-              <div class="flex justify-between items-center">
-                <span class="text-lg font-semibold text-blue-600">$120</span>
-                <button
-                  class="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition-all duration-300"
-                >
-                  OPEN PRODUCT
-                </button>
-              </div>
-            </div>
-          </div>
-        </nuxt-link>
+            </div></nuxt-link
+          >
+          <button
+            class="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition-all duration-300"
+          >
+            OPEN PRODUCT
+          </button>
+        </div>
       </div>
     </section>
 
     <!-- Footer Section -->
-    <footer id="contact" class="bg-blue-600 text-white py-6 px-4">
+    <!-- <footer id="contact" class="bg-blue-600 text-white py-6 px-4">
       <div class="max-w-7xl mx-auto text-center">
         <p class="text-lg">ShopMaster &copy; 2025 | All Rights Reserved</p>
         <p class="text-sm mt-2">Contact us: support@shopmaster.com</p>
       </div>
-    </footer>
+    </footer> -->
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import type { Product } from "~/assets/types";
+import axios from "axios";
+
 export default {
+  data() {
+    return {
+      featuredProducts: [] as Product[],
+    };
+  },
+  methods: {
+    async fetchingData() {
+      const response = await axios.get(
+        `http://localhost:4000/products?_limit=3`
+      );
+      this.featuredProducts = response.data;
+    },
+  },
+  mounted() {
+    this.fetchingData();
+  },
   name: "HomePage",
 };
 </script>
