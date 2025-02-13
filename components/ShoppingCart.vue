@@ -10,6 +10,12 @@
       >
         Clear Cart
       </button>
+      <button
+        @click="store.toggleCart()"
+        class="bg-orange-500 text-white py-2 px-6 rounded-lg hover:bg-orange-400 transition duration-300"
+      >
+        X
+      </button>
     </div>
 
     <div
@@ -94,5 +100,6 @@ export default {
 .container {
   background-color: rgba(128, 128, 128, 0.699);
   margin-top: 55px;
+  position: fixed;
 }
 </style>

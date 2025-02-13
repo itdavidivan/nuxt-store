@@ -137,9 +137,10 @@
             </div></nuxt-link
           >
           <button
-            class="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition-all duration-300"
+            @click.self="store.addItem(product)"
+            class="mt-4 w-full bg-blue-600 text-white py-2 rounded-full hover:bg-blue-700 transition-all duration-300"
           >
-            OPEN PRODUCT
+            Add to Cart
           </button>
         </div>
       </div>
@@ -158,12 +159,18 @@
 <script lang="ts">
 import type { Product } from "~/assets/types";
 import axios from "axios";
+import useCounterStore from "~/store/useStore";
 
 export default {
   data() {
     return {
       featuredProducts: [] as Product[],
     };
+  },
+  computed: {
+    store() {
+      return useCounterStore();
+    },
   },
   methods: {
     async fetchingData() {
