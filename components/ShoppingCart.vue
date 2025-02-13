@@ -71,7 +71,7 @@
     >
       <div class="text-xl font-semibold text-gray-800">
         Total:
-        <span class="text-500">{{ totalPrice }}$</span>
+        <span class="text-black">{{ totalPrice }}$</span>
       </div>
       <button
         class="bg-orange-500 text-white py-2 px-6 rounded-lg hover:bg-orange-400 transition duration-300"
