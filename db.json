@@ -23,7 +23,7 @@
       "name": "Organic Bananas",
       "description": "Fresh, organic bananas from local farms.",
       "stock": 50,
-      "price": 1.5,
+      "price": 2,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4I0lAKalx2Je4lRF5E_rSJZAtPrpKAHA8vg&s",
       "category": "FOOD"
     },
@@ -31,7 +31,7 @@
       "id": "5bf6d270-468b-4d94-be91-5bfe60042717",
       "name": "Nike Air Max 97",
       "description": "Stylish and comfortable running shoes from Nike.",
-      "stock": 30,
+      "stock": 34,
       "price": 120,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjvBCBan3wB2M3K0Ha3rzEx1v4yBa5veipmA&s",
       "category": "CLOTHING"
@@ -49,26 +49,17 @@
       "id": "d5b88260-9c3f-4c35-9b8a-0b8b6d35d0e1",
       "name": "Samsung Galaxy S24",
       "description": "Latest Samsung phone with a powerful camera and display.",
-      "stock": 15,
+      "stock": 25,
       "price": 899,
       "picture": "https://th.bing.com/th/id/OIP.G62iPJiaObNlhDbsmIG0zAHaEK?w=316&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
       "category": "ELECTRONIC"
     },
     {
-      "id": "2345cda2-dba1-4704-bd72-c1a5d97835ac",
-      "name": "Mangoes",
-      "description": "Juicy and ripe mangoes from tropical farms.",
-      "stock": 70,
-      "price": 2,
-      "picture": "https://th.bing.com/th/id/OIP.MU70HdDEdT402u9pwKs3FQHaGL?w=199&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
-      "category": "FOOD"
-    },
-    {
       "id": "f875c1a0-c97b-4091-8b07-717ae541df02",
       "name": "Adidas Ultraboost 22",
       "description": "High-performance running shoes from Adidas with great cushioning.",
-      "stock": 25,
-      "price": 180,
+      "stock": 32,
+      "price": 190,
       "picture": "https://th.bing.com/th/id/OIP._3dmrXh2DGWFA5bGhPishQHaE8?w=244&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
       "category": "CLOTHING"
     },
@@ -85,7 +76,7 @@
       "id": "ad56fe83-4369-4f3f-824b-5d44f0d94658",
       "name": "Pineapple",
       "description": "Fresh and sweet pineapples from tropical regions.",
-      "stock": 60,
+      "stock": 65,
       "price": 3,
       "picture": "https://th.bing.com/th/id/OIP.dsgoAOgGcmdPk_iZCWee4wHaFe?w=222&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
       "category": "FOOD"
