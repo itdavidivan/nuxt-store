@@ -72,7 +72,6 @@
       "picture": "https://th.bing.com/th/id/OIP._3dmrXh2DGWFA5bGhPishQHaE8?w=244&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
       "category": "CLOTHING"
     },
-
     {
       "id": "f50a7c24-4b7b-4712-8131-98a88f4c6316",
       "name": "Sony PlayStation 5",
@@ -90,6 +89,15 @@
       "price": 3,
       "picture": "https://th.bing.com/th/id/OIP.dsgoAOgGcmdPk_iZCWee4wHaFe?w=222&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
       "category": "FOOD"
+    },
+    {
+      "id": "581aa456-d40c-41bd-a2fe-2a9650dad3ad",
+      "name": "Bugatti",
+      "description": "Fastest car in the world.",
+      "stock": 3,
+      "price": 40000,
+      "picture": "https://www.autoshippers.co.uk/blog/wp-content/uploads/bugatti-centodieci.jpg",
+      "category": "CARS"
     }
   ]
 }
