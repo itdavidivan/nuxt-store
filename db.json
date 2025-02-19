@@ -10,33 +10,6 @@
       "category": "CARS"
     },
     {
-      "id": "e1454887-b6c0-4e76-b642-88d3a5330208",
-      "name": "Apple iPhone 15",
-      "description": "Latest iPhone with A17 chip and improved camera system.",
-      "stock": 20,
-      "price": 999,
-      "picture": "https://th.bing.com/th/id/OIP.cRSpT192Z3KxFhf0i1KoOQHaEx?w=247&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
-      "category": "ELECTRONIC"
-    },
-    {
-      "id": "67ed5754-1391-40df-8583-b7ded55bbf22",
-      "name": "Organic Bananas",
-      "description": "Fresh, organic bananas from local farms.",
-      "stock": 50,
-      "price": 2,
-      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4I0lAKalx2Je4lRF5E_rSJZAtPrpKAHA8vg&s",
-      "category": "FOOD"
-    },
-    {
-      "id": "5bf6d270-468b-4d94-be91-5bfe60042717",
-      "name": "Nike Air Max 97",
-      "description": "Stylish and comfortable running shoes from Nike.",
-      "stock": 34,
-      "price": 120,
-      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjvBCBan3wB2M3K0Ha3rzEx1v4yBa5veipmA&s",
-      "category": "CLOTHING"
-    },
-    {
       "id": "a1b8d5f2-b7f9-4b84-8a71-b7d4fc3ac33d",
       "name": "Ford Mustang",
       "description": "Classic American muscle car with a powerful V8 engine.",
@@ -46,48 +19,30 @@
       "category": "CARS"
     },
     {
-      "id": "d5b88260-9c3f-4c35-9b8a-0b8b6d35d0e1",
-      "name": "Samsung Galaxy S24",
-      "description": "Latest Samsung phone with a powerful camera and display.",
-      "stock": 25,
-      "price": 899,
-      "picture": "https://th.bing.com/th/id/OIP.G62iPJiaObNlhDbsmIG0zAHaEK?w=316&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
-      "category": "ELECTRONIC"
-    },
-    {
-      "id": "f875c1a0-c97b-4091-8b07-717ae541df02",
-      "name": "Adidas Ultraboost 22",
-      "description": "High-performance running shoes from Adidas with great cushioning.",
-      "stock": 32,
-      "price": 190,
-      "picture": "https://th.bing.com/th/id/OIP._3dmrXh2DGWFA5bGhPishQHaE8?w=244&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
-      "category": "CLOTHING"
-    },
-    {
-      "id": "f50a7c24-4b7b-4712-8131-98a88f4c6316",
-      "name": "Sony PlayStation 5",
-      "description": "Next-gen gaming console with ultra-fast SSD and amazing graphics.",
-      "stock": 30,
-      "price": 499,
-      "picture": "https://th.bing.com/th/id/OIP.OEgK0-W_tjV16CMrz6K4mwHaFj?w=213&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
-      "category": "ELECTRONIC"
-    },
-    {
-      "id": "ad56fe83-4369-4f3f-824b-5d44f0d94658",
-      "name": "Pineapple",
-      "description": "Fresh and sweet pineapples from tropical regions.",
-      "stock": 65,
-      "price": 3,
-      "picture": "https://th.bing.com/th/id/OIP.dsgoAOgGcmdPk_iZCWee4wHaFe?w=222&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
-      "category": "FOOD"
-    },
-    {
       "id": "581aa456-d40c-41bd-a2fe-2a9650dad3ad",
       "name": "Bugatti",
       "description": "Fastest car in the world.",
       "stock": 3,
       "price": 40000,
       "picture": "https://www.autoshippers.co.uk/blog/wp-content/uploads/bugatti-centodieci.jpg",
+      "category": "CARS"
+    },
+    {
+      "id": "6ef5bb27-b7e8-4f0c-ac3c-8cc94848a8c4",
+      "name": "Marco Jaroš",
+      "description": "Fresh and sweet pineapples from tropical regions.",
+      "stock": 3,
+      "price": 3,
+      "picture": "dssad",
+      "category": "CARS"
+    },
+    {
+      "id": "557c3d23-880e-489e-8873-ea1bf8d5bf5a",
+      "name": "Marco Jaroš",
+      "description": "Fresh and sweet pineapples from tropical regions.",
+      "stock": 3,
+      "price": 3,
+      "picture": "dssad",
       "category": "CARS"
     }
   ]
