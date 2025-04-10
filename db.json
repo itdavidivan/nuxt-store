@@ -10,33 +10,6 @@
       "category": "CARS"
     },
     {
-      "id": "a1b8d5f2-b7f9-4b84-8a71-b7d4fc3ac33d",
-      "name": "Ford Mustang",
-      "description": "Classic American muscle car with a powerful V8 engine.",
-      "stock": 8,
-      "price": 55999,
-      "picture": "https://th.bing.com/th/id/OIP.m4KhVoOc_hTH4E9-hfXj1wHaEK?w=287&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
-      "category": "CARS"
-    },
-    {
-      "id": "581aa456-d40c-41bd-a2fe-2a9650dad3ad",
-      "name": "Bugatti",
-      "description": "Fastest car in the world.",
-      "stock": 3,
-      "price": 40000,
-      "picture": "https://www.autoshippers.co.uk/blog/wp-content/uploads/bugatti-centodieci.jpg",
-      "category": "CARS"
-    },
-    {
-      "id": "6ef5bb27-b7e8-4f0c-ac3c-8cc94848a8c4",
-      "name": "Marco Jaroš",
-      "description": "Fresh and sweet pineapples from tropical regions.",
-      "stock": 3,
-      "price": 3,
-      "picture": "dssad",
-      "category": "CARS"
-    },
-    {
       "id": "557c3d23-880e-489e-8873-ea1bf8d5bf5a",
       "name": "Marco Jaroš",
       "description": "Fresh and sweet pineapples from tropical regions.",
